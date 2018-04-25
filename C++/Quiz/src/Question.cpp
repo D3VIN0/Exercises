@@ -46,6 +46,12 @@ void Question::showQ()
 
 void Question::checkAnswer()
 {
+    if(answer=="A") answer = "a";   // exchange from capital
+    else if(answer=="B") answer = "b";
+    else if(answer=="C") answer = "c";
+    else if(answer=="D") answer = "d";
+
+
     if(answer==correct)
     {
         point = 1;
